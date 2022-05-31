@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Palindrom string</title>
+        <script type="text/javascript">
+        // forward and backword same words = dad, madam, mom
+        var string = prompt("please enter string");
+        var stringArray = string.split('');
+        var stringArrayRev = stringArray.reverse();
+        var revString = stringArrayRev.join('');
+        if (string === revString){
+            console.log(`${string}: Is Palindrom`);
+        }else{
+            console.log(`${string}: is not palindrom`);
+        }
+
+    </script>
+    </head>
+    <body>
+
+    </body>
+</html>

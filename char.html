@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find character start and end</title>
+    <script type="text/javascript">
+        var string = prompt("please enter a string");
+        var testStart =  string.startsWith('w');  // w start
+        var testEnd = string.endsWith('e');        // e end
+        // console.log(`Starts: ${testStart}`);
+        // console.log(`Ends: ${testEnd}`);
+        if(testStart == true && testEnd == true){
+            console.log(`${string} starts with w and ends with e`);
+        }else if(testStart == true && testEnd == false){
+            console.log(`${string} starts with w`);
+        }else if(testStart == false && testEnd == true){
+            console.log(`${string} ends with e`);
+        }else{
+            console.log(`${string} neither starts with w or ends with e`);
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

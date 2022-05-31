@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding voval characters</title>
+    <script type="text/javascript">
+        var string = prompt("please enter a string");
+        const reg = /[aeiou]/gi;  //gi globaly ignore
+        var chars = string.match(reg);
+        console.log(chars.join(','));  // coma given
+        console.log(chars.length);
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

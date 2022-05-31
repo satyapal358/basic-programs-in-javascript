@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>area map value</title>
+
+    <script type="text/javascript">
+        var base = prompt("please enter the base value","");
+        var height = prompt("please enter the height value","");
+        var surface = prompt("please enter the surface value","");
+        var map = (base+height+surface)/2
+        
+        var temp = map*(map-base)*(map-height)*(map-surface);
+        var area = Math.sqrt(temp);
+        console.log(area);
+        // var area = (base * height)/2;                              // area tringle value find 
+       
+
+       
+        // console.log('Base: '+ base + 'Height: '+ height + 'Area:' + area);
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html> 

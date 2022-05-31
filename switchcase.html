@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator using switch</title>
+    <script type="text/javascript">
+        var num1 = prompt("first number");
+        var num2 = prompt("second number");
+        var opr = prompt("select opr +, -, x, /");
+        switch(opr)
+        {
+            case "+":
+                var res = parseFloat(num1) + parseFloat(num2);
+                console.log(`${num1} + ${num2} = ${res}`);
+                break;
+            
+            case "-":
+                var res = (num1) - (num2);
+                console.log(`${num1} - ${num2} = ${res}`);
+                break;
+
+            case "x":
+                var res = (num1) * (num2);
+                console.log(`${num1} x ${num2} = ${res}`);
+                break;    
+
+            case "/":
+                var res = (num1) / (num2);
+                console.log(`${num1} / ${num2} = ${res}`);
+                break; 
+                
+            default:
+                console.log('invalid operator');
+    
+        }
+            console.log(`Your Answer is: ${res}`);
+       
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reverse character print</title>
+    <script type="text/javascript">
+       var string = prompt("please enter string");
+       var strLen = string.length;
+       var revStr = '';
+
+    // console.log(string.[strLen -1]); // last character
+        for(var i= strLen -1; i>=0; i--){
+            console.log(string[i]);
+            revStr += string[i];
+        }
+        console.log(`${string} revers is ${revStr}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="u-g-wb-break-word">
+        123,451,45.00
+    </div>
+    
+</body>
+<script>
+    $('.u-g-wb-break-word').text(function(i, s){
+        return s.replace(/\d+/g, function(m){
+            return parseInt(m, 10) + 612;
+        });
+    });
+    
+    </script>     
+</script>
+</html>

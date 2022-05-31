@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>armstrong numbers an interval</title>
+    <script type="text/javascript">
+            var a = prompt('please enter lower number');
+            var b = prompt('please enter upper number')
+            for (var i=a ; i <=b; i++){
+               var temp = i;
+               var noOfDigit = i.toString().length;
+               sum = 0;
+               while(temp > 0){
+                   var digit = temp%10;
+                   temp = parseInt(temp/10);
+                   sum += digit ** noOfDigit;
+    
+               }
+               if (sum == i){
+                   console.log(i);
+               }
+
+            }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

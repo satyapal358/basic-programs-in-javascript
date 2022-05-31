@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>same character finding</title>
+    <script type="text/javascript">
+        // hello -> L - 2
+        var string = prompt("please enter a string");
+        var letter = prompt("please enter a letter");
+        let strLen = string.length;
+        var counter = 0;
+        for(var i = 0; i< strLen; i++){
+          if (string[i] == letter){
+              counter++;
+          }
+        }
+        console.log(`${string} => ${counter}`);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
